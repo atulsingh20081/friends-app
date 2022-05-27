@@ -8,9 +8,9 @@ Things you may want to cover:
 * Ruby version
    - ruby 2.6.9p207 (2021-11-24 revision 67954)
 * System dependencies
-
+   - 
 * Configuration
-
+   - Not needed
 * Database creation
 
 * Database initialization
@@ -20,5 +20,7 @@ Things you may want to cover:
 * Services (job queues, cache servers, search engines, etc.)
 
 * Deployment instructions
+   - run the app in intelliJ 
+   - open http://localhost:3000 on browser
 
 * ...
