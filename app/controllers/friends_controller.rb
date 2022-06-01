@@ -27,7 +27,8 @@ class FriendsController < ApplicationController
     @friend = current_user.friends.build(friend_params)
     respond_to do |format|
       if @friend.save
-        FriendsMailer.send_add_friend_email(@friend, current_user).deliver
+        #EmailWorker.perform_async(@friend, current_user)
+        FriendsMailer.send_add_friend_email(@friend, current_user).deliver_later!
         format.html { redirect_to friend_url(@friend), notice: "Friend was successfully created." }
         format.json { render :show, status: :created, location: @friend }
       else

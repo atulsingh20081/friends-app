@@ -3,5 +3,10 @@ Rails.application.routes.draw do
   resources :friends
   get 'home/about'
   root 'friends#index'
+  require 'sidekiq/web'
+
+  Rails.application.routes.draw do
+    mount Sidekiq::Web => '/sidekiq'
+  end
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
