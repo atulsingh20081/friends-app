@@ -4,8 +4,6 @@ ruby '2.6.9'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.6'
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3', '~> 1.4'
 # Use Puma as the app server
 gem 'puma', '~> 5.0'
 # Use SCSS for stylesheets
@@ -16,6 +14,9 @@ gem 'webpacker', '~> 5.0'
 gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.7'
+
+gem 'mysql2', '~> 0.5.2'
+
 
 gem 'devise', '~> 4.8', '>= 4.8.1'
 
@@ -57,3 +58,7 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+gem "elasticsearch-rails", "~> 7.2"
+gem "elasticsearch-model", "~> 7.2"
+gem "elasticsearch-persistence", "~> 7.2"

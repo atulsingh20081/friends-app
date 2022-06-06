@@ -1,0 +1,163 @@
+
+---
+ar_internal_metadata:
+  columns:
+  - key
+  - value
+  - created_at
+  - updated_at
+  records: 
+  - - environment
+    - development
+    - '2022-05-17 09:11:20.969304'
+    - '2022-05-17 09:11:20.969304'
+
+---
+friends:
+  columns:
+  - id
+  - first_name
+  - last_name
+  - dob
+  - email
+  - phone
+  - created_at
+  - updated_at
+  - user_id
+  records: 
+  - - 12
+    - afe
+    - ''
+    - '2022-05-18'
+    - ''
+    - ''
+    - '2022-05-18 10:24:42.389123'
+    - '2022-05-18 10:24:42.389123'
+    - 3
+  - - 16
+    - aa
+    - ea
+    - '2022-05-18'
+    - ade
+    - ''
+    - '2022-05-18 11:31:07.121436'
+    - '2022-05-18 11:31:07.121436'
+    - 3
+  - - 17
+    - Darcy
+    - Lane
+    - '2017-01-25'
+    - darcy@hotmail.com
+    - '9998887777'
+    - '2022-05-25 04:59:22.714464'
+    - '2022-05-25 04:59:22.714464'
+    - 4
+  - - 85
+    - Arpit
+    - Singh
+    - '2022-05-31'
+    - atul.nitk20081@gmail.com
+    - '09519552737'
+    - '2022-05-31 08:39:36.257432'
+    - '2022-05-31 08:39:36.257432'
+    - 2
+  - - 86
+    - Kedar
+    - Manure
+    - '2022-05-31'
+    - atul.nitk20081@gmail.com
+    - '09519552737'
+    - '2022-05-31 08:40:35.369150'
+    - '2022-05-31 08:40:35.369150'
+    - 2
+  - - 87
+    - Pooja
+    - Sethi
+    - '2022-05-31'
+    - atul.nitk20081@gmail.com
+    - '09519552737'
+    - '2022-05-31 08:42:56.123827'
+    - '2022-05-31 08:42:56.123827'
+    - 2
+  - - 88
+    - Shashank
+    - Singhal
+    - '2022-05-31'
+    - atul.nitk20081@gmail.com
+    - '09519552737'
+    - '2022-05-31 08:51:39.793690'
+    - '2022-05-31 08:51:39.793690'
+    - 2
+  - - 89
+    - ''
+    - ''
+    - '2022-05-31'
+    - atul.nitk20081@gmail.com
+    - '09519552737'
+    - '2022-05-31 08:53:07.591831'
+    - '2022-05-31 08:53:07.591831'
+    - 2
+  - - 90
+    - Kedar
+    - ''
+    - '2022-05-31'
+    - atul.nitk20081@gmail.com
+    - '09519552737'
+    - '2022-05-31 08:57:12.648620'
+    - '2022-05-31 08:57:12.648620'
+    - 2
+  - - 91
+    - Arpit
+    - Singh
+    - '2022-05-31'
+    - atul.nitk20081@gmail.com
+    - '09519552737'
+    - '2022-05-31 09:16:44.741421'
+    - '2022-05-31 09:16:44.741421'
+    - 2
+  - - 92
+    - Soumen
+    - Pal
+    - '2022-06-01'
+    - atul.nitk20081@gmail.com
+    - '09519552737'
+    - '2022-06-01 06:54:46.174413'
+    - '2022-06-01 06:54:46.174413'
+    - 2
+
+---
+users:
+  columns:
+  - id
+  - email
+  - encrypted_password
+  - reset_password_token
+  - reset_password_sent_at
+  - remember_created_at
+  - created_at
+  - updated_at
+  records: 
+  - - 2
+    - atul.singh1@freshworks.com
+    - "$2a$12$eSUp5YukfMGmrIpdvdL7jeDlMWmZc0IRwTGIVu11i3SFZUCismhNy"
+    -
+    -
+    -
+    - '2022-05-18 08:58:06.118512'
+    - '2022-05-26 08:23:16.251281'
+  - - 3
+    - pooja.sethi889@gmail.com
+    - "$2a$12$j0Ir0sHCX9u0Mly.uqC7MeydDyC8Bw1W1Pht3ZnVS.MBUCe7n79yK"
+    -
+    -
+    -
+    - '2022-05-18 09:13:20.013653'
+    - '2022-05-25 09:03:47.469262'
+  - - 4
+    - atul.singh2@freshworks.com
+    - "$2a$12$GBFy6sEA6RZsYZuLmJjmwu1oVqfrz.89LJDa5LnJL8xg0CD0lK1Ga"
+    -
+    -
+    -
+    - '2022-05-25 04:58:30.647076'
+    - '2022-05-25 04:58:30.647076'

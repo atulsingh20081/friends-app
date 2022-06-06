@@ -2,9 +2,14 @@ class FriendsController < ApplicationController
   before_action :set_friend, only: %i[ show edit update destroy ]
   before_action :authenticate_user!, except: [:index, :show]
   before_action :correct_user, only: [:edit, :update, :destroy]
+
+  #before_save :
   # GET /friends or /friends.json
   def index
-    @friends = Friend.all
+    #@friends = Friend.all
+    if(user_signed_in?)
+      @friends = Friend.my_friends(current_user.id)
+    end
   end
 
   # GET /friends/1 or /friends/1.json
@@ -61,6 +66,19 @@ class FriendsController < ApplicationController
     end
   end
 
+  def search
+    #query = params[:search_friends].presence && params[:search_friends][:query]
+    if params[:query].present?
+      result = Friend.search(params[:query], current_user).results.first
+      if result != nil
+        @friend = result._source
+      end
+    end
+
+  end
+
+
+
   def correct_user
     @friend = current_user.friends.find_by(id: params[:id])
     redirect_to friends_path, notice: "Not authorized to edit this record" if @friend.nil?
@@ -76,4 +94,7 @@ class FriendsController < ApplicationController
     def friend_params
       params.require(:friend).permit(:first_name, :last_name, :dob, :email, :phone, :user_id)
     end
+
+
+
 end

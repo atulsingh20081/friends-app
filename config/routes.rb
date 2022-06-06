@@ -1,10 +1,13 @@
 Rails.application.routes.draw do
   devise_for :users
-  resources :friends
+  resources :friends do
+    collection do
+      get :search
+    end
+  end
   get 'home/about'
   root 'friends#index'
   require 'sidekiq/web'
-
   Rails.application.routes.draw do
     mount Sidekiq::Web => '/sidekiq'
   end
