@@ -1,6 +1,6 @@
 <div class="card">
   <div class="card-header">
-    <h2>Sign up</h2>
+    <h2><%= t 'global.menu.sign_up' %></h2>
   </div>
   <div class="card-body">
     <br/>
@@ -8,19 +8,19 @@
       <%= render "devise/shared/error_messages", resource: resource %>
 
       <div class="field">
-        <%= f.email_field :email, autofocus: true, autocomplete: "email", class:"form-control",  placeholder:"Email" %>
+        <%= f.email_field :email, autofocus: true, autocomplete: "email", class:"form-control",  placeholder: (t 'static_pages.registration.new.email') %>
       </div>
       <br />
       <div class="field form-group">
-        <%= f.password_field :password, autocomplete: "new-password", class:"form-control",  placeholder:"Password" %>
+        <%= f.password_field :password, autocomplete: "new-password", class:"form-control",  placeholder: (t 'static_pages.registration.new.password')  %>
       </div>
       <br />
       <div class="field form-group">
-        <%= f.password_field :password_confirmation, autocomplete: "new-password", class:"form-control",  placeholder:"Re-enter Password" %>
+        <%= f.password_field :password_confirmation, autocomplete: "new-password", class:"form-control",  placeholder:(t 'static_pages.registration.new.re-enter_password')  %>
       </div>
       <br />
       <div class="actions">
-        <%= f.submit "Sign up", class:"btn btn-dark"%>
+        <%= f.submit (t 'global.menu.sign_up'), class:"btn btn-dark"%>
       </div>
     <% end %>
 

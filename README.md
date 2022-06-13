@@ -10,18 +10,21 @@ Things you may want to cover:
 * System dependencies
    - mysql
    - redis for sidekiq
+   - elastic search - v6.8.5
+   - java 1.8(needed for elastic search)
    
 * Configuration
-   - Not needed
+   - Make sure elastic search is running on localhost:9200.
+  
 * Database creation : Run the followig commands from the root of the project
-   - Install & run a Mysql server using commmand - mysql.server start
+   - Install & run a Mysql server using command - mysql.server start
    - Login to root. mysql -u root -p. Enter password 'root'. If password not set use the query to set the password
-     UPDATE user SET password=PASSWORD("NEWPASSWORD") WHERE User='root';
+     UPDATE user SET password=PASSWORD("root") WHERE User='root';
 
 * Database initialization
-  - Run the followig commands from the root of the project
-    - db:create
-    - db:migrate
+  - Run the following commands from the root of the project
+    - rails db:create
+    - rails db:migrate
 
 * How to run the test suite
 
@@ -30,7 +33,6 @@ Things you may want to cover:
 * Deployment instructions
    - run the app in intelliJ 
    - open http://localhost:3000 on browser
-  ![](/Users/atsingh/Desktop/Home Page.png)
   
 * Description
    - Simple web app with login functionality(using devise).

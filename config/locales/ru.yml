@@ -1,0 +1,66 @@
+ru:
+  devise:
+    sessions:
+      user:
+        signed_in: "Выполнен вход."
+  global:
+    menu:
+      app: "Приложение друзей"
+      add_friend: "Добавить друга"
+      about_us: "О нас"
+      list_friends: "Cписок друзей"
+      edit_profile: "Редактировать профиль"
+      sign_out: "Выход"
+      search: "Поиск"
+      sign_in: "Войти"
+      sign_up: "зарегистрироваться"
+      log_in: "Авторизоваться"
+      forgot_password: "Забыли свой пароль?"
+      remember_me: "Запомните меня"
+      submit: "Представлять на рассмотрение"
+      back: "Назад"
+
+  static_pages:
+    home:
+      index:
+        hello_world: "Привет, мир!"
+        app_desc: "Мое первое приложение ruby on rails..."
+        friend_list: "Список друзей"
+        new_friend: "Новый друг"
+
+    registration:
+      new:
+        email: "Эл. адрес"
+        password: "Пароль"
+        re-enter_password: "Повторно введите пароль"
+
+      edit:
+        password_instructions: "Отправьте мне инструкции по сбросу пароля"
+        edit_profile: "Редактировать профиль"
+        current_password: "Текущий пароль (нам нужен ваш текущий пароль, чтобы подтвердить ваши изменения)"
+        new_password: "Новый пароль (минимум 6 символов)"
+        re-enter_new_password: "Повторно введите новый пароль (минимум 6 символов)"
+        update: "Обновлять"
+        cancel_account: "Отменить мою учетную запись"
+        unhappy: "Несчастный?"
+
+    friend:
+      new:
+        add_friend: "Добавить нового друга"
+      edit:
+        edit_friend: "Редактирование друга"
+      form:
+        show: "Показывать"
+        edit: "Редактировать"
+        destroy: "Разрушать"
+
+  activerecord:
+    attributes:
+      friend:
+        first_name: "Имя"
+        last_name: "Фамилия"
+        dob: "Доб"
+        email: "Эл. адрес"
+        phone: "Телефон"
+        id: "я бы"
+        created_by: "Создано по идентификатору пользователя"

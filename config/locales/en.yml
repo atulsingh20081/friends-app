@@ -30,4 +30,67 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  global:
+    menu:
+      app: "Friends App"
+      add_friend: "Add Friend"
+      about_us: "About us"
+      list_friends: "My Friends"
+      edit_profile: "Edit Profile"
+      sign_out: "Sign out"
+      search: "Search"
+      sign_in: "Sign In"
+      sign_up: "Sign Up"
+      log_in: "Log in"
+      forgot_password: "Forgot your password?"
+      remember_me: "Remember me"
+      submit: "Submit"
+      back: "Back"
+
+  static_pages:
+    home:
+      index:
+        hello_world: "Hello world!"
+        app_desc: "My first ruby on rails application..."
+        friend_list: "Friend List"
+        new_friend: "New Friend"
+
+    registration:
+      new:
+        email: "Email"
+        password: "Password"
+        re-enter_password: "Re-enter password"
+
+      edit:
+        password_instructions: "Send me reset password instructions"
+        edit_profile: "Edit Profile"
+        current_password: "Current Password(we need your current password to confirm your changes)"
+        new_password: "New Password(minimum 6 characters)"
+        re-enter_new_password: "Re-enter New Password(minimum 6 characters)"
+        update: "Update"
+        cancel_account: "Cancel my account"
+        unhappy: "Unhappy?"
+
+    friend:
+      new:
+        add_friend: "Add New Friend"
+
+      edit:
+        edit_friend: "Editing Friend"
+
+      form:
+        show: "Show"
+        edit: "Edit"
+        destroy: "Destroy"
+
+
+  activerecord:
+    attributes:
+      friend:
+        first_name: "First name"
+        last_name: "Last Name"
+        dob: "Date of birth"
+        email: "Email"
+        phone: "Phone Number"
+        id: "Id"
+        created_by: "Created By User Id"

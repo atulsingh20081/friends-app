@@ -1,5 +1,11 @@
 class Friend < ApplicationRecord
   belongs_to :user
+  validates :first_name, presence: true, length: { minimum: 1 }
+  validates :last_name, presence: true, length: { minimum: 1}
+  validates :email, format: { with: URI::MailTo::EMAIL_REGEXP }
+  validates :user_id, :numericality => {:only_integer => true}
+  validates_presence_of :dob
+
   scope :my_friends, -> (userId) { where("user_id = ?", userId) }
 
   include Elasticsearch::Model

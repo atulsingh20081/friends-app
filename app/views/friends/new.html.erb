@@ -1,5 +1,5 @@
-<h1>Add New Friend</h1>
+<h1><%= t 'static_pages.friend.new.add_friend' %></h1>
 
 <%= render 'form', friend: @friend %>
 <br/>
-<%= link_to 'Back', friends_path, class:"btn btn-dark" %>
+<%= link_to (t 'global.menu.back'), friends_path, class:"btn btn-dark" %>
